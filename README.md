@@ -2,12 +2,12 @@
 一个用于Java热更新项目的工具
 
 项目架构：
-https://github.com/veione/AppLoader/blob/master/structure.png
+![github](https://github.com/veione/AppLoader/blob/master/structure.png "structure")  
 
 项目使用规则：
 
 1、将项目的入口类实现自com.think.Application接口
-
+<pre>
 package com.think.test;
 
 import com.think.app.Application;
@@ -22,7 +22,7 @@ public class TestLoader2 implements Application{
         System.out.println("Test2----------->destory");
     }
 }
-
+</pre>
 
 
 2、配置文件loader.xml(可参考代码中的loader.xml配置文件)
@@ -39,18 +39,13 @@ directory属性是设置你项目部署的文件夹,所以这里不能出错，�
 
 
 3、开启服务
-
+<pre>
 package com.think;
 
 import com.think.app.ApplicationManager;
 import com.think.config.Configuration;
 import com.think.config.DefaultConfiguration;
 
-/**
- * 主函数
- * @author veione
- *
- */
 public class App {
 	public static void main(String[] args) {
 		Thread t = new Thread(new Runnable() {
@@ -74,7 +69,7 @@ public class App {
 	}
 
 }
-
+</pre>
 
 最后
 
