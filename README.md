@@ -2,7 +2,7 @@
 一个用于Java热更新项目的工具
 
 项目架构：
-https://github.com/veione/AppLoader/structure.png
+https://github.com/veione/AppLoader/blob/master/structure.png
 
 项目使用规则：
 
