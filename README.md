@@ -26,16 +26,16 @@ public class TestLoader2 implements Application{
 
 
 2、配置文件loader.xml(可参考代码中的loader.xml配置文件)
-<code>
-<?xml version="1.0" encoding="UTF-8"?>
-<apps directory="apps/">
-    <app>
-        <name>Test2</name>
-        <cls>com.think.test.TestLoader2</cls>
-    </app>
-</apps>
-</code>
-
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;apps directory="apps/"&gt;
+    &lt;app&gt;
+        &lt;name&gt;Test2&lt;/name&gt;
+        &lt;cls&gt;com.think.test.TestLoader2&lt;/cls&gt;
+    &lt;/app&gt;
+&lt;/apps&gt;
+</pre>
+<br/>
 directory属性是设置你项目部署的文件夹,所以这里不能出错，因为监听器会时刻检查这个目录的改变，
 一旦目录改变或者项目jar包变动就会进行自动热替换。
 
